@@ -2,8 +2,8 @@ FROM gradle
 
 # Install Node.js (Source: Dockerfile of node:8.15.0-stretch)
 
-RUN groupadd --gid 1000 node \
-  && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
+RUN groupadd --gid 1001 node \
+  && useradd --uid 1001 --gid node --shell /bin/bash --create-home node
 
 ENV NODE_VERSION 8.15.0
 
